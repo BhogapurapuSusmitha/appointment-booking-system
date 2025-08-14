@@ -1,0 +1,80 @@
+/* Apply a beautiful full-screen gradient background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling the main container */
+.container {
+    background: linear-gradient(145deg, #ffffff, #f2f2f2);
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    max-width: 550px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Heading style */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Label styling for better spacing */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: 500;
+}
+
+/* Inputs, selects, and textareas look unified */
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #74ebd5;
+    box-shadow: 0 0 5px rgba(116, 235, 213, 0.5);
+}
+
+/* Button design with gradient and hover effect */
+button {
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    color: white;
+    padding: 14px;
+    margin-top: 25px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #92fe9d, #00c9ff);
+    transform: translateY(-2px);
+}
+
+/* Optional: Make the form responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 20px;
+    }
+}
